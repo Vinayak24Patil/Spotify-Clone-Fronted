@@ -234,20 +234,20 @@ a{
     height: 65px;
     margin-bottom:0.25rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0 0.5rem 0 ;
+     padding: 0.25rem 0 0.25rem 0 ;
 }
-
+ 
 .album{
-   height: 100%;
    width:25%;
    display: flex;
    align-items: center;
 }
 
 .album-img{
-    height: 56px;
-    width: 56px;
+    height: 57px;
+    width: 57px;
     margin-right: 1rem;
      margin-left: 0.5rem;
 }
@@ -277,11 +277,83 @@ a{
 
 .album-icon{
     margin: 0 0.2rem 0 0.2rem;
-}
-
+} 
 
 .player{
-    
+    width: 50%;
+}
+
+.player-control{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.7rem;
+    opacity: 0.7;
 }
 
 
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+
+.playback-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem; 
+  margin-right:3rem;
+}
+
+.progress-bar {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, white 35%, #333 35%);
+  outline: none;
+  cursor: pointer;
+  
+}
+
+/* Hide the thumb - Chrome, Safari */
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+/* Firefox */
+.progress-bar::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+/* IE & Edge */
+.progress-bar::-ms-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+.curr-time,.tot-time {
+  font-size: 14px; /* or try 10px, 11px as needed */
+}
+
+.controls{
+    width: 25%;
+    
+}
