@@ -249,7 +249,7 @@ a{
     height: 57px;
     width: 57px;
     margin-right: 1rem;
-     margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .album-para{
@@ -303,50 +303,35 @@ a{
 
 .playback-bar {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-family: sans-serif;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem; 
-  margin-right:3rem;
+  margin-top: 0.4rem;
 }
 
 .progress-bar {
-  -webkit-appearance: none;
+  appearance: none;
   width: 70%;
-  height: 3px;
-  border-radius: 3px;
-  background: linear-gradient(to right, white 35%, #333 35%);
-  outline: none;
+  background-color: transparent;
   cursor: pointer;
-  
+  margin: 0 1rem 0 1rem;
+ 
 }
 
 /* Hide the thumb - Chrome, Safari */
-.progress-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: none;
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #fff;
+    border-radius: 100px;
+    height: 0.2rem;
+  
 }
 
-/* Firefox */
-.progress-bar::-moz-range-thumb {
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: none;
-}
-
-/* IE & Edge */
-.progress-bar::-ms-thumb {
-  width: 0;
-  height: 0;
-  background: transparent;
-  border: none;
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6.5px;
 }
 
 .curr-time,.tot-time {
@@ -355,5 +340,30 @@ a{
 
 .controls{
     width: 25%;
+    height: 57px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2rem;
     
+}
+.controls>i{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.controls>i:hover{
+    opacity: 1;
+}
+
+
+.mini-progress-bar {
+  -webkit-appearance: none;
+  width: 20%;
+  height: 3px;
+  border-radius: 3px;
+  background: #333;
+  outline: none;
+  cursor: pointer;
 }
