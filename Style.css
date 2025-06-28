@@ -188,13 +188,19 @@ a{
 }
 
 .card{
-    background-color: #232323;
+     background-color: #232323;
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1.25rem;
     margin-top: 1rem;
 }
+
+.card:hover{
+    background-color: #232323;
+}
+
+
  
 .card-img{
     width: 100%;
@@ -349,7 +355,7 @@ a{
     
 }
 .controls>i{
-    font-size: 1.2rem;
+    font-size: 1rem;
     opacity: 0.7;
 }
 
