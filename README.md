@@ -20,6 +20,6 @@ This is a frontend-only clone of the Spotify web app 🎶, designed to mimic the
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+[git clone https://github.com/your-username/your-repo-name.git](https://github.com/Vinayak24Patil/Spotify-Clone-Fronted.git)
 cd your-repo-name
 open index.html
