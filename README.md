@@ -13,7 +13,7 @@ This is a frontend-only clone of the Spotify web app 🎶, designed to mimic the
 
 ## 📷 Screenshots
 
-*(Add screenshots here if you have any)*
+![image](https://github.com/user-attachments/assets/8e035f57-a309-4734-ade2-d516e96617a8)
 
 ---
 
